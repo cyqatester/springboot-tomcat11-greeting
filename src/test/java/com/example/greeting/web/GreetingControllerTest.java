@@ -1,6 +1,5 @@
 package com.example.greeting.web;
 
-import com.example.greeting.web.form.GreetingForm;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.webmvc.test.autoconfigure.WebMvcTest;
