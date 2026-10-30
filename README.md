@@ -78,4 +78,7 @@ src/test/java/com/example/greeting/web/
 - No database is needed for this sample.
 - For production, add CI checks, dependency/security scanning, integration tests, and environment-specific configuration as appropriate.
 
-test 3 to trigger CI/CD
+Note:
+
+Make sure your local runner is active before triggering Github Action. Below is the command
+C:\actions-runner> .\run.cmd
