@@ -78,4 +78,4 @@ src/test/java/com/example/greeting/web/
 - No database is needed for this sample.
 - For production, add CI checks, dependency/security scanning, integration tests, and environment-specific configuration as appropriate.
 
-test to trigger CI/CD
+test 2 to trigger CI/CD
