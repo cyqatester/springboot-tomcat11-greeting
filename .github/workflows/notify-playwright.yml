@@ -1,0 +1,25 @@
+
+name: Trigger Playwright Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  notify-playwright:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger Playwright repository
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PLAYWRIGHT_TRIGGER_TOKEN }} #token expires Nov 30, 2026
+          repository: cyqatester/playwright-greeting-tests
+          event-type: java-app-updated
+          client-payload: '{"java_sha": "${{ github.sha }}"}'
