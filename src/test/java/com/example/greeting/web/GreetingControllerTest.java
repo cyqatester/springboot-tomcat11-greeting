@@ -19,7 +19,7 @@ class GreetingControllerTest {
 
     @Test
     void homeDisplaysEmptyNameFields() throws Exception {
-        mockMvc.perform(get("/homepage"))
+        mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
                 .andExpect(view().name("home"))
                 .andExpect(model().attributeExists("greetingForm"))
@@ -66,6 +66,6 @@ class GreetingControllerTest {
     void returnHomeRedirectsToFreshForm() throws Exception {
         mockMvc.perform(post("/home"))
                 .andExpect(status().is3xxRedirection())
-                .andExpect(redirectedUrl("/homepage"));
+                .andExpect(redirectedUrl("/"));
     }
 }

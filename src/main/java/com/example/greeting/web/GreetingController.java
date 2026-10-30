@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 @Controller
 public class GreetingController {
 
-    @GetMapping("/homepage")
+    @GetMapping("/")
     public String home(Model model) {
         model.addAttribute("greetingForm", new GreetingForm());
         return "home";
@@ -35,6 +35,6 @@ public class GreetingController {
     @PostMapping("/home")
     public String returnHome() {
         // Redirect to GET / so a new, empty form is created.
-        return "redirect:/homepage";
+        return "redirect:/";
     }
 }
