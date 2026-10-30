@@ -77,3 +77,5 @@ src/test/java/com/example/greeting/web/
 - JUnit 5 tests are provided using Spring MVC's `MockMvc`.
 - No database is needed for this sample.
 - For production, add CI checks, dependency/security scanning, integration tests, and environment-specific configuration as appropriate.
+
+test to trigger CI/CD
